@@ -1,1 +1,16 @@
+import random
 
+
+def rand5():
+    return random.randint(1, 5)
+
+
+def rand7():
+    a=5*(rand5()-1)
+    b=rand5()
+    result=a+b
+    if result<= 21:
+        return result%7+1
+
+print 'Rolling 7-sided die...'
+print rand7()
